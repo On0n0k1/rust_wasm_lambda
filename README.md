@@ -29,9 +29,7 @@ For cloning this and using wasm-pack. [https://git-scm.com/book/en/v2/Getting-St
 
 ## Install Docker 
 
-Used by serverless to invoke local functions. Local functions are for testing. [https://www.docker.com/get-started]
-
-(https://www.docker.com/get-started)
+Used by serverless to invoke local functions. Local functions are for testing. [https://www.docker.com/get-started](https://www.docker.com/get-started)
 
 ## Install Wasm-Pack
 
@@ -79,4 +77,17 @@ Functions can still be tested locally, though.
   - run: serverless invoke local --function ***$functionname***
 
 Replace ***$functionname*** with the function name in the serverless file. Currently the only function is hello.
+
+## If last command doesn't work
+
+If aws configure + serverless invoke doesn't work. Creating a named profile might work. Here's a better summarized tutorial: [https://medium.com/ivymobility-developers/configure-named-aws-profile-usage-in-applications-aws-cli-60ea7f6f7b40](https://medium.com/ivymobility-developers/configure-named-aws-profile-usage-in-applications-aws-cli-60ea7f6f7b40).
+
+In summary, considering we want to create a profile named "serverless":
+
+ - run: aws configure --profile serverless
+
+ - run: serverless invoke local --function --aws-profile serverless
+
+ 
+
 
