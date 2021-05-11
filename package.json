@@ -1,0 +1,13 @@
+{
+    "name": "rust_wasm_lambda",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+      "build": "wasm-pack build --target nodejs",
+      "local_invoke": "serverless invoke local -f hello",
+      "run": "serverless invoke -f hello",
+      "deploy": "serverless deploy"
+    }
+  }
+
+  

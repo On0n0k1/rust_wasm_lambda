@@ -1,0 +1,16 @@
+# This is for testing it straight from your aws server.
+# 
+# run: serverless login
+# Create an account and enter the dashboard.
+# 
+# run: serverless config credentials --provider aws --key $YOURKEY --secret $YOURSECRET
+# Where $YOURKEY and $YOURSECRET are the .csv credentials you downloaded from your aws user account.
+# 
+# run: serverless deploy
+# After deploying with "serverless deploy" Test it by putting the link in front of "GET" here.
+# 
+# Then click on "Send Request". Need VSCode Extension "REST Client".
+# 
+
+GET 
+
