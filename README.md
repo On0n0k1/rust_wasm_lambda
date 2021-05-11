@@ -86,8 +86,12 @@ In summary, considering we want to create a profile named "serverless":
 
  - run: aws configure --profile serverless
 
- - run: serverless invoke local --function --aws-profile serverless
+Add the ***access key ID*** and ***Secret Access Key*** referred above. You can also add region, I put myne as "sa-east-1" (South America east 1). Pressing enter will set to use default.
 
- 
+ - run: serverless invoke local --function ***$functionname*** --aws-profile serverless
+
+Replace ***$functionname*** with the function name in the serverless file. Currently the only function is hello.
+
+
 
 
