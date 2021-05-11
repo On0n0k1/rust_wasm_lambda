@@ -93,5 +93,9 @@ Add the ***access key ID*** and ***Secret Access Key*** referred above. You can 
 Replace ***$functionname*** with the function name in the serverless file. Currently the only function is hello.
 
 
+# How to remove it
 
+Remove the lambda from your serverless and aws accounts with this.
+
+ - run: serverless remove
 
